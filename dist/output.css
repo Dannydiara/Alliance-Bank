@@ -1623,6 +1623,10 @@ textarea.form-control.is-invalid {
   animation-name: _slide-out-right;
 }
 
+.slide-left {
+  animation-name: _slide-left;
+}
+
 .ripple-surface {
   position: relative;
   overflow: hidden;
