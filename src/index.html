@@ -1,0 +1,585 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Home - Alliance Bank</title>
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js" defer></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Open+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" href="input.css">
+
+    <!------------------------ Testimonial Internal CSS ----------------------->
+    <style>
+        [x-cloak] {
+            display: none;
+        }
+    
+        .grid-indigo {
+            background-image: radial-gradient(#b80f0f 2px, transparent 2px);
+            background-size: 16px 16px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!------------------------- Heading Start ------------------------->
+
+    <nav class="relative px-4 py-4 flex justify-between items-center bg-gray-100">
+        <a class="" href="#">
+            <img class="h-20" src="./img/bank_logo.png" alt="">
+        </a>
+        <div class="lg:hidden">
+            <button class="navbar-burger flex items-center text-blue-600 p-3">
+                <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Mobile menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+            </button>
+        </div>
+        <ul
+            class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+            <li><a class="text-lg font-base text-gray-800 hover:text-gray-500" href="#">Personal</a></li>
+            <li class="text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                </svg>
+            </li>
+            <li><a class="text-lg font-base text-gray-800 hover:text-gray-500" href="#">Business</a></li>
+            <li class="text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                </svg>
+            </li>
+            <li><a class="text-lg font-base text-gray-800 hover:text-gray-500" href="#">Loans</a></li>
+            <li class="text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                </svg>
+            </li>
+            <li><a class="text-lg font-base text-gray-800 hover:text-gray-500" href="#">Digital Banking</a></li>
+            <li class="text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                </svg>
+            </li>
+            <li><a class="text-lg font-base text-gray-800 hover:text-gray-500" href="#">About Us</a></li>
+        </ul>
+        <a class="hidden lg:inline-block px-6 bg-red-600 hover:bg-red-800 text-lg text-white rounded-2xl transition py-6"
+            href="signin.html">&#128274; DIGITAL BANKING SIGN IN
+        </a>
+    </nav>
+    <div class="navbar-menu relative z-50 hidden">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-gray-100 border-r overflow-y-auto">
+            <div class="flex items-center mb-8">
+                <a class="mr-auto" href="#">
+                    <img class="h-16" src="./img/bank_logo.png" alt="">
+                </a>
+                <button class="navbar-close">
+                    <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="">
+                <ul>
+                    <li class="mb-1">
+                    <a class="block p-4 font-semibold text-lg font-base text-gray-800 hover:text-gray-500 rounded-2xl hover:bg-red-300"
+                    href="#">Home</a>
+                    </li>
+                    <li class="mb-1">
+                    <a class="block p-4 font-semibold text-lg font-base text-gray-800 hover:text-gray-500 rounded-2xl hover:bg-red-300"
+                    href="#">About Us</a>
+                    </li>
+                    <li class="mb-1">
+                    <a class="block p-4 font-semibold text-lg font-base text-gray-800 hover:text-gray-500 rounded-2xl hover:bg-red-300"
+                    href="#">Services</a>
+                    </li>
+                    <li class="mb-1">
+                    <a class="block p-4 font-semibold text-lg font-base text-gray-800 hover:text-gray-500 rounded-2xl hover:bg-red-300"
+                    href="#">Pricing</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 font-semibold text-lg font-base text-gray-800 hover:text-gray-500 rounded-2xl hover:bg-red-300"
+                            href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-auto">
+                <div class="pt-6">
+                    <a class="block px-4 py-6 mb-2 leading-loose text-center bg-red-600 hover:bg-red-800 text-lg text-white rounded-2xl"
+                        href="signin.html">&#128274; DIGITAL BANKING SIGN IN</a>
+                </div>
+                <p class="my-4 text-xs text-center text-gray-400">
+                    <span>Copyright © 
+                        <span id="copyright">
+                            <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                        </span>
+                    </span>
+                </p>
+            </div>
+        </nav>
+    </div>
+
+    <!------------------------- Heading End ------------------------->
+
+    <!------------------------- Content Start ------------------------->
+    <!------------------------- Carousel Start ------------------------->
+
+    <div id="carouselDarkVariant" class="carousel slide carousel-fade carousel-white relative" data-bs-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+            <button data-bs-target="#carouselDarkVariant" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button data-bs-target="#carouselDarkVariant" data-bs-slide-to="1" aria-label="Slide 1"></button>
+            <button data-bs-target="#carouselDarkVariant" data-bs-slide-to="2" aria-label="Slide 1"></button>
+            <button data-bs-target="#carouselDarkVariant" data-bs-slide-to="3" aria-label="Slide 1"></button>
+        </div>
+    
+        <!-- Inner -->
+        <div class="carousel-inner relative w-full overflow-hidden">
+            <!-- Single item -->
+            <div class="carousel-item active relative float-left w-full">
+                <img src="./img/carousel-1.jpg" class="block w-full"
+                    alt="Motorbike Smoke" />
+                <div class="carousel-caption md:block absolute text-center">
+                    <h1 class="text-xl font-bold">Overdrafts Happen From Time to Time</h1>
+                </div>
+            </div>
+    
+            <!-- Single item -->
+            <div class="carousel-item relative float-left w-full">
+                <img src="./img/carousel-2.jpg" class="block w-full"
+                    alt="Mountaintop" />
+                <div class="carousel-caption md:block absolute text-center">
+                    <h1 class="text-xl font-bold">New Credit Cards for Personal and Business</h1>
+                </div>
+            </div>
+    
+            <!-- Single item -->
+            <div class="carousel-item relative float-left w-full">
+                <img src="./img/carousel-3.jpg" class="block w-full" alt="Mountaintop" />
+                <div class="carousel-caption md:block absolute text-center">
+                    <h1 class="text-xl font-bold">We are Alliance in home buying!</h1>
+                </div>
+            </div>
+
+            <!-- Single item -->
+            <div class="carousel-item relative float-left w-full">
+                <img src="./img/carousel-4.png" class="block w-full" alt="Woman Reading a Book" />
+                <div class="carousel-caption md:block absolute text-center">
+                    <h1 class="text-xl font-bold">A 20-Year+ Alliance with Farmers</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Inner -->
+    
+        <!-- Controls -->
+        <button
+            class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+            type="button" data-bs-target="#carouselDarkVariant" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+            class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+            type="button" data-bs-target="#carouselDarkVariant" data-bs-slide="next">
+            <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!------------------------- Carousel End ------------------------->
+
+    <!------------------------- Help Start ------------------------->
+    <section class="mb-20 text-gray-700 px-4 mx-32">
+        <div class="grid md:grid-cols-4 sm:grid-cols-2 gap-12 mt-14 sm:px-1 text-center">
+            <div class="mb-6 md:mb-0 hover:bg-red-100 rounded-2xl transition duration-300 ease-in-out">
+                <a href="">
+                    <div class="flex justify-center mb-6">
+                        <img src="img/location.png" class=" w-24" />
+                    </div>
+                    <p class="text-xl my-4 text-gray-900">
+                        Help Center
+                    </p>
+                </a>
+            </div>
+            <div class="mb-0 hover:bg-red-100 rounded-2xl transition duration-300 ease-in-out">
+                <a href="" class="">
+                    <div class="flex justify-center mb-6">
+                        <img src="img/reorder-check.png" class=" w-24" />
+                    </div>
+                    <p class="text-xl my-4 text-gray-900">
+                        Reorder Checks
+                    </p>
+                </a>
+            </div>
+            <div class="mb-0 hover:bg-red-100 rounded-2xl transition duration-300 ease-in-out">
+                <a href="">
+                    <div class="flex justify-center mb-6">
+                        <img src="img/creditCardIcon.png" class=" w-24" />
+                    </div>
+                    <p class="text-xl my-4 text-gray-900">
+                        Help Center
+                    </p>
+                </a>
+            </div>
+            <div class="mb-0 hover:bg-red-100 rounded-2xl transition duration-300 ease-in-out">
+                <a href="">
+                    <div class="flex justify-center mb-6">
+                        <img src="img/helpIcon.png" class=" w-24" />
+                    </div>
+                    <p class="text-xl my-4 text-gray-900">
+                        Help Center
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!------------------------- Help End ------------------------->
+    <!------------------------- Info Start------------------------>
+
+    <div class="text-center info pb-48">
+        <div class="pt-20 pb-5">    
+            <h1 class="font-bold text-5xl text-slate-100">Why Bank with Alliance?</h1>
+        </div>
+        <div class="flex flex-wrap justify-center gap-2 mt-14 text-slate-100">
+            <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
+                <!-- Dropdown toggle button -->
+                <button @mouseover="open = true" class="flex items-center py-5 px-16 border-b-2 border-slate-100 shadow-lg rounded-2xl">
+                    <span class="font-semibold text-xl">FRIENDLY</span>
+                </button>
+        
+                <!-- Dropdown menu -->
+                <div x-show="open" x-transition:enter.duration.500ms x-transition:leave.duration.800ms
+                    class="absolute right-0 w-72 py-2 mt-2 z-10 bg-red-800 rounded-2xl shadow-2xl">
+                    <h1>Our mission is to be the preferred community bank provider of financial services in the markets we serve.</h1>
+                </div>
+            </div>
+            <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
+                <!-- Dropdown toggle button -->
+                <button @mouseover="open = true" class="flex items-center py-5 px-16 border-b-2 border-slate-100 shadow-lg rounded-2xl">
+                    <span class="font-semibold text-xl">SECURE</span>
+                </button>
+            
+                <!-- Dropdown menu -->
+                <div x-show="open" x-transition:enter.duration.500ms x-transition:leave.duration.800ms
+                    class="absolute right-0 w-72 py-2 mt-2 z-10 bg-red-800 rounded-2xl shadow-lg">
+                <h1>Get quick access and simple responses to our most frequently received questions.</h1>
+                </div>
+            </div>
+            <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
+                <!-- Dropdown toggle button -->
+                <button @mouseover="open = true" class="flex items-center py-5 px-16 border-b-2 border-slate-100 shadow-lg rounded-2xl">
+                    <span class="font-semibold text-xl">CONVENIENT</span>
+                </button>
+            
+                <!-- Dropdown menu -->
+                <div x-show="open" x-transition:enter.duration.500ms x-transition:leave.duration.800ms
+                    class="absolute right-0 w-72 py-2 mt-2 z-10 bg-red-800 rounded-2xl shadow-lg">
+                <h1>Life is hectic. We understand. Alliance Bank has made banking convenient for our customers, with our digital banking
+                solutions.</h1>
+                </div>
+            </div>
+            <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
+                <!-- Dropdown toggle button -->
+                <button @mouseover="open = true" class="flex items-center py-5 px-16 border-b-2 border-slate-100 shadow-lg rounded-2xl">
+                    <span class="font-semibold text-xl">LOCAL</span>
+                </button>
+            
+                <!-- Dropdown menu -->
+                <div x-show="open" x-transition:enter.duration.500ms x-transition:leave.duration.800ms
+                    class="absolute right-0 w-72 py-2 mt-2 z-10 bg-red-800 rounded-2xl shadow-lg">
+                <h1>We have locations everywhere you are–we’re your neighborhood bank!</h1>
+                </div>
+            </div>
+            <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
+                <!-- Dropdown toggle button -->
+                <button @mouseover="open = true" class="flex items-center py-5 px-16 border-b-2 border-slate-100 shadow-lg rounded-2xl">
+                    <span class="font-semibold text-xl">EASY</span>
+                </button>
+            
+                <!-- Dropdown menu -->
+                <div x-show="open" x-transition:enter.duration.500ms x-transition:leave.duration.800ms
+                    class="absolute right-0 w-72 py-2 mt-2 z-10 bg-red-800 rounded-2xl shadow-lg">
+                <h1>Make the switch today!</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!------------------------- Info End------------------------>
+
+    <!------------------- Community Start ---------------------->
+    
+    <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
+        <div class="pt-20 pb-5 text-center">
+            <h1 class="font-bold text-2xl md:text-5xl sm:text-4xl text-slate-800 justify-center">We Love Our Community</h1>
+            <p class="text-slate-700 text-base md:text-lg sm:text-md pt-2 text">As a community bank, we're proud to show our support for the community. Follow our blog to see how we like to get
+            involved!</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2 gap-10">
+            <div class="rounded-2xl overflow-hidden shadow-lg">
+                <a href="#">
+                    <div class="relative">
+                        <img class="w-full"
+                            src="img/Relay-Family.jpg"
+                            alt="family">
+                        <div
+                            class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                        </div>
+                    </div>
+                </a>
+                <div class="px-6 py-4">
+                    <a href="#"
+                        class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">Best
+                        AB Service Spotlight: Lexi Davenport</a>
+                    <p class="text-gray-500 text-sm">
+                        Role= Relay For Life of Cape Girardeau County Accounting Chair How Long= My family participated in our first Relay For
+                        Life in 2004 in Jackson County IL at the SIU... Continue reading this article
+                    </p>
+                </div>
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-lg">
+                <a href="#">
+                    <div class="relative">
+                        <img class="w-full"
+                            src="img/counter-scaled.jpg"
+                            alt="Sunset in the mountains">
+                        <div
+                            class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                        </div>
+                    </div>
+                </a>
+                <div class="px-6 py-4">
+                    <a href="#"
+                        class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">Best
+                        Client Spotlight: Auto Tire & Parts NAPA</a>
+                    <p class="text-gray-500 text-sm">
+                        At Alliance Bank, we are honored to partner with local businesses. We know that small businesses make our communities
+                        strong, and we are dedicated to helping these businesses succeed. To... Continue reading this article
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!------------------- Community End ---------------------->
+
+    <!---------------------- Testimonial Start ---------------------->
+
+    <div class="my-10 md:my-24 container mx-auto flex flex-col md:flex-row shadow-sm overflow-hidden"
+        x-data="{ testimonialActive: 2 }" x-cloak>
+        <div class="relative w-full py-2 md:py-24 bg-gray-100 md:w-1/2 flex flex-col item-center justify-center">
+    
+            <div class="absolute top-0 left-0 z-10 grid-indigo w-16 h-16 md:w-40 md:h-40 md:ml-20 md:mt-24"></div>
+            
+            <div class="relative py-2 rotate-6 px-6 md:py-6 md:px-1 md:w-64 md:mx-auto z-20"
+                x-show.immediate="testimonialActive === 1">
+                <img src="img/testimonial4.png" alt="">
+            </div>
+            <div class="relative py-2 rotate-6 px-2 md:py-6 md:px-1 md:w-64 md:mx-auto z-20"
+                x-show.immediate="testimonialActive === 2">
+                <img src="img/testimonial1.png" alt="">
+            </div>
+            <div class="relative py-2 rotate-6 px-6 md:py-6 md:px-1 md:w-64 md:mx-auto z-20"
+                x-show.immediate="testimonialActive === 3">
+                <img src="img/testimonial2.png" alt="">
+            </div>
+            <div class="relative py-2 rotate-6 px-10 md:py-6 md:px-1 md:w-64 md:mx-auto z-20"
+                x-show.immediate="testimonialActive === 4">
+                <img src="img/testimonial3.png" alt="">
+            </div>
+            
+    
+            <div class="absolute right-0 bottom-0 mr-4 mb-4 hidden md:block">
+                <button
+                    class="rounded-l-2xl border-r bg-indigo-100 text-gray-600 focus:outline-none hover:text-indigo-500 font-bold w-12 h-10"
+                    x-on:click="testimonialActive = testimonialActive === 1 ? 4 : testimonialActive - 1">
+                    &#8592;
+                </button><button
+                    class="rounded-r-2xl bg-indigo-100 text-gray-600 focus:outline-none hover:text-indigo-500 font-bold w-12 h-10"
+                    x-on:click="testimonialActive = testimonialActive >= 4 ? 1 : testimonialActive + 1">
+                    &#8594;
+                </button>
+            </div>
+        </div>
+    
+        <div class="bg-gray-100 md:w-1/2">
+            <div class="flex flex-col h-full relative">
+    
+                <div class="absolute top-0 left-0 mt-3 ml-4 md:mt-5 md:ml-12">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-indigo-200 fill-current w-12 h-12 md:w-16 md:h-16"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M6.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L9.758 4.03c0 0-.218.052-.597.144C8.97 4.222 8.737 4.278 8.472 4.345c-.271.05-.56.187-.882.312C7.272 4.799 6.904 4.895 6.562 5.123c-.344.218-.741.4-1.091.692C5.132 6.116 4.723 6.377 4.421 6.76c-.33.358-.656.734-.909 1.162C3.219 8.33 3.02 8.778 2.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C2.535 17.474 4.338 19 6.5 19c2.485 0 4.5-2.015 4.5-4.5S8.985 10 6.5 10zM17.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L20.758 4.03c0 0-.218.052-.597.144-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.317.143-.686.238-1.028.467-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.944-.33.358-.656.734-.909 1.162C14.219 8.33 14.02 8.778 13.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C13.535 17.474 15.338 19 17.5 19c2.485 0 4.5-2.015 4.5-4.5S19.985 10 17.5 10z" />
+                    </svg>
+                </div>
+    
+                <div class="h-full relative z-10">
+                    <div x-show.immediate="testimonialActive === 1">
+                        <p class="text-gray-600 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl"
+                            x-show.transition="testimonialActive == 1">
+                            Farmington Regional Stockyards is owned by Terry, Clay and Storm Birk.
+                            It is one of the top livestock auction barns in Southeast Missouri.
+                            Clay is a 4th generation livestock producer in the Birk family.
+                            Farmington Regional Stockyards has multiple livestock sales, which includes horse & tack.
+                            The Birk’s are very pleased with the Online Banking services Alliance Bank provides.
+                            User friendly Cash Management tools help manage their business.
+                        </p>
+                    </div>
+    
+                    <div x-show.immediate="testimonialActive === 2">
+                        <p class="text-gray-600 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl"
+                            x-show.transition="testimonialActive == 2">
+                            Our family has done business with Alliance Bank since 2003.
+                            We always feel like we have a truly caring and committed business partner with Mike Pobst and Alliance Bank.
+                            They’ve helped us grow our farming and land leveling operations over the last several years!
+                        </p>
+                    </div>
+    
+                    <div x-show.immediate="testimonialActive === 3">
+                        <p class="text-gray-600 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl"
+                            x-show.transition="testimonialActive == 3">
+                            I’ve had the pleasure of doing business with Alliance Bank for over 7 years.
+                            They have done an excellent job handling my personal needs as well as truly understanding my business.
+                            Their high level of professionalism, reliability, and having that friendly hometown feeling is second to none.”
+                        </p>
+                    </div>
+                    <div x-show.immediate="testimonialActive === 4">
+                        <p class="text-gray-600 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl"
+                            x-show.transition="testimonialActive == 4">
+                            We bank with Alliance Bank because they understand the financing needs of small business.
+                            We also like banking with local people who understand our local economy.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="flex my-4 justify-center items-center">
+                    <button @click.prevent="testimonialActive = 1" class="text-center font-bold shadow-lg focus:outline-none focus:shadow-outline inline-block rounded-2xl mx-2"
+                        :class="{'h-12 w-12 opacity-25 bg-indigo-300 text-gray-600': testimonialActive != 1, 'h-16 w-16 opacity-100 bg-indigo-600 text-white': testimonialActive == 1 }">
+                        FR
+                    </button>
+                    <button @click.prevent="testimonialActive = 2" class="text-center font-bold shadow-lg focus:outline-none focus:shadow-outline h-16 w-16 inline-block bg-indigo-600 rounded-2xl mx-2"
+                        :class="{'h-12 w-12 opacity-25 bg-indigo-300 text-gray-600': testimonialActive != 2, 'h-16 w-16 opacity-100 bg-indigo-600 text-white': testimonialActive == 2 }">
+                        LF
+                    </button>
+                    <button @click.prevent="testimonialActive = 3"
+                        class="text-center font-bold shadow-lg focus:outline-none focus:shadow-outline h-12 w-12 inline-block bg-indigo-600 rounded-2xl mx-2"
+                        :class="{'h-12 w-12 opacity-25 bg-indigo-300 text-gray-600': testimonialActive != 3, 'h-16 w-16 opacity-100 bg-indigo-600 text-white': testimonialActive == 3 }">
+                        CE
+                    </button>
+                     <button @click.prevent="testimonialActive = 4" 
+                        class="text-center font-bold shadow-lg focus:outline-none focus:shadow-outline h-12 w-12 inline-block bg-indigo-600 rounded-2xl mx-2"
+                        :class="{'h-12 w-12 opacity-25 bg-indigo-300 text-gray-600': testimonialActive != 4, 'h-16 w-16 opacity-100 bg-indigo-600 text-white': testimonialActive == 4 }">
+                        RF
+                    </button>
+                </div>
+    
+                <div class="flex justify-center px-6 pt-2 pb-6 md:py-6">
+                    <div class="text-center" x-show="testimonialActive == 1">
+                        <h2 class="text-sm md:text-base font-bold text-gray-700 leading-tight">Terry, Clay and Storm Birk</h2>
+                        <small class="text-gray-500 text-xs md:text-sm truncate">Farmington Regional Stockyards</small>
+                    </div>
+    
+                    <div class="text-center" x-show="testimonialActive == 2">
+                        <h2 class="text-sm md:text-base font-bold text-gray-700 leading-tight">Jarrett Lawfield</h2>
+                        <small class="text-gray-500 text-xs md:text-sm truncate">Lawfield Farms</small>
+                    </div>
+    
+                    <div class="text-center" x-show="testimonialActive == 3">
+                        <h2 class="text-sm md:text-base font-bold text-gray-700 leading-tight">Dustin Cauble</h2>
+                        <small class="text-gray-500 text-xs md:text-sm truncate">President of Cauble Enterprises Inc</small>
+                    </div>
+                    <div class="text-center" x-show="testimonialActive == 4">
+                        <h2 class="text-sm md:text-base font-bold text-gray-700 leading-tight">Eddie and Adam Ross</h2>
+                        <small class="text-gray-500 text-xs md:text-sm truncate">Ross Furniture Company Inc</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!---------------------- Testimonial End ---------------------->
+
+    <!--------------------------- Footer Start ------------------------>
+
+    <footer class="">
+        <section class="bg-gray-900">
+            <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+                <nav class="flex flex-wrap justify-center -mx-5 -my-2">
+                    <div class="px-5 py-2">
+                        <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-100">
+                            About
+                        </a>
+                    </div>
+                    <div class="px-5 py-2">
+                        <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-100">
+                            Blog
+                        </a>
+                    </div>
+                    <div class="px-5 py-2">
+                        <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-100">
+                            Team
+                        </a>
+                    </div>
+                    <div class="px-5 py-2">
+                        <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-100">
+                            Pricing
+                        </a>
+                    </div>
+                    <div class="px-5 py-2">
+                        <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-100">
+                            Contact
+                        </a>
+                    </div>
+                    <div class="px-5 py-2">
+                        <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-100">
+                            Terms
+                        </a>
+                    </div>
+                </nav>
+                <div class="flex justify-center mt-8 space-x-6">
+                </div>
+                <p class="mt-8 text-base leading-6 text-center text-gray-400">
+                    © <span id="copyright">
+                        <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                    </span>Alliance, Inc. All rights reserved.
+                </p>
+            </div>
+        </section>
+    </footer>
+
+    <!--------------------------- Footer End -------------------------->
+
+
+    <!------------------------- Content End ------------------------->
+
+    <script src="../node_modules/tw-elements/dist/js/index.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Franklin', sans-serif;
+}
+
+.info {
+    background: rgb(166,19,19);
+    background: radial-gradient(circle, rgb(187, 11, 11) 2%, rgb(113, 5, 5) 34%, rgb(134, 12, 12) 74%, rgba(102, 8, 8, 0.955) 100%);
+}
+
+.button {
+    background-color: fade(#FFFFFF, 50%);
+}
+
+@media (max-width: 768px) {
+    .info {
+        padding-bottom: 60px !important;
+    }
+    
+}

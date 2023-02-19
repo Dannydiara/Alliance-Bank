@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transactions - Alliance Bank</title>
+
+    <link href="/dist/output.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/5ab65340c1.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Open+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="input.css">
+</head>
+<body class="bg-red-500">
+    <div class="px-10 lg:px-60 md:px-10 sm:px-4">
+        <div>
+            <div class="header">
+                <div class="logo flex justify-end my-10">
+                    <h1 class="px-3 text-sky-800 font-medium">David Allen Brown</h1>
+                    <span class="text-sky-800"><i class="fa-regular fa-user fa-2xl"></i></span>
+                </div>
+            </div>
+            <div class="currency">
+                <div class="text-4xl font-bold my-4">
+                    <h1 class="text-sky-800">Account</h1>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-x-12">
+                    <div class="bg-slate-100 rounded-2xl pl-7 py-3 mb-2">
+                        <div>
+                            <img class="w-20 h-20 rounded-full" src="img/usd.jpeg" alt="dollars">
+                        </div>
+                        <div class="mt-10">
+                            <h3 class="text-sky-800 text-xl font-semibold py-1">70,000,000.00</h3>
+                            <p class="text-slate-500 tracking-widest">US Dollar</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-100 rounded-2xl pl-7 py-3 mb-2">
+                        <div>
+                            <img class="w-20 h-20 rounded-full" src="img/ukp.jpeg" alt="pounds">
+                        </div>
+                        <div class="mt-10">
+                            <h3 class="text-sky-800 text-xl font-semibold py-1">0.00</h3>
+                            <p class="text-slate-500 tracking-widest">UK Pound</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-100 rounded-2xl pl-7 py-3 mb-2">
+                        <div>
+                            <img class="w-20 h-20 rounded-full" src="img/euro.jpeg" alt="euros">
+                        </div>
+                        <div class="mt-10">
+                            <h3 class="text-sky-800 text-xl font-semibold py-1">0.00</h3>
+                            <p class="text-slate-500 tracking-widest">Euro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---------------------------- Transactions Start ---------------------------->
+        
+        <div class="transaction mt-10 mb-3">
+            <div>
+                <div class="text-4xl font-bold my-4">
+                    <h1 class="text-sky-800">Transaction</h1>
+                </div>
+                <div class="flex flex-col">
+                    <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                        <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+                            <div class="overflow-hidden">
+                                <table class="min-w-full text-center">
+                                    <!-- <thead>
+                                        <tr>
+                                            <th scope="col" class="text-lg w-16 font-bold text-gray-600 px-6 py-4">
+                                                #
+                                            </th>
+                                            <th scope="col" class="text-lg font-bold text-gray-600 px-6 py-4">
+                                                First
+                                            </th>
+                                            <th scope="col" class="text-lg font-bold text-gray-600 px-6 py-4">
+                                                
+                                            </th>
+                                            <th scope="col" class="text-lg font-bold text-gray-600 px-6 py-4">
+                                                Handle
+                                            </th>
+                                        </tr>
+                                    </thead> -->
+                                    <tbody>
+                                        <tr class="transition duration-300 ease-in-out hover:bg-slate-100">
+                                            <td class="whitespace-nowrap text-sky-800">
+                                                <i class="px-6 py-5 rounded-full bg-slate-100 fa-solid fa-arrow-up fa-base"></i>
+                                            </td>
+                                            <td class="text-lg text-left text-sky-800 font-semibold px-6 py-4 whitespace-nowrap">
+                                                Mark Thornton <br>
+                                                <span class="text-slate-500 text-xs font-sm">Sent ~ 18-02</span>
+                                            </td>
+                                            <td class="text-base text-gray-900 font-semibold px-6 py-4 whitespace-nowrap">
+                                            </td>
+                                            <td class="text-lg text-right text-sky-800 font-semibold px-6 py-4 whitespace-nowrap">
+                                                50,000.00 USD
+                                            </td>
+                                        </tr>
+                                        <tr class="transition duration-300 ease-in-out hover:bg-slate-100">
+                                            <td class="whitespace-nowrap text-sky-800">
+                                                <i class="px-6 py-5 rounded-full bg-slate-100 fa-solid fa-arrow-up fa-base"></i>
+                                            </td>
+                                            <td class="text-lg text-left text-sky-800 font-semibold px-6 py-4 whitespace-nowrap">
+                                                John Smith <br>
+                                                <span class="text-slate-500 text-xs font-sm">Sent ~ 13-02</span>
+                                            </td>
+                                            <td class="text-base text-gray-900 font-semibold px-6 py-4 whitespace-nowrap">
+                                            </td>
+                                            <td class="text-lg text-right text-sky-800 font-semibold px-6 py-4 whitespace-nowrap">
+                                                43,000.00 USD
+                                            </td>
+                                        </tr>
+                                        <tr class="transition duration-300 ease-in-out hover:bg-slate-100">
+                                            <td class="whitespace-nowrap text-sky-800">
+                                                <i class="px-6 py-5 rounded-full bg-slate-100 fa-solid fa-arrow-up fa-base"></i>
+                                            </td>
+                                            <td class="text-lg text-left text-sky-800 font-semibold px-6 py-4 whitespace-nowrap">
+                                                Michael Williams <br>
+                                                <span class="text-slate-500 text-xs font-sm">Sent ~ 09-02</span>
+                                            </td>
+                                            <td class="text-base text-gray-900 font-semibold px-6 py-4 whitespace-nowrap">
+                                            </td>
+                                            <td class="text-lg text-right text-sky-800 font-semibold px-6 py-4 whitespace-nowrap">
+                                                4,000.00 GBP
+                                            </td>
+                                        </tr>
+                                        <tr class="transition duration-300 ease-in-out hover:bg-slate-100">
+                                            <td class="whitespace-nowrap text-sky-800">
+                                                <i class="px-6 py-5 rounded-full bg-slate-100 fa-solid fa-arrow-up fa-base"></i>
+                                            </td>
+                                            <td class="text-lg text-left text-sky-800 font-semibold px-6 py-4 whitespace-nowrap">
+                                                John Smith <br>
+                                                <span class="text-slate-500 text-xs font-sm">Sent ~ 04-02</span>
+                                            </td>
+                                            <td class="text-base text-gray-900 font-semibold px-6 py-4 whitespace-nowrap">
+                                            </td>
+                                            <td class="text-lg text-right text-sky-800 font-semibold px-6 py-4 whitespace-nowrap">
+                                                11,000.00 USD
+                                            </td>
+                                        </tr>
+                                        <tr class="transition duration-300 ease-in-out hover:bg-slate-100">
+                                            <td class="whitespace-nowrap text-sky-800">
+                                                <i class="px-6 py-5 rounded-full bg-slate-100 fa-solid fa-arrow-up fa-base"></i>
+                                            </td>
+                                            <td class="text-lg text-left text-sky-800 font-semibold px-6 py-4 whitespace-nowrap">
+                                                Jennifer Garcia <br>
+                                                <span class="text-slate-500 text-xs font-sm">Sent ~ 31-01</span>
+                                            </td>
+                                            <td class="text-base text-gray-900 font-semibold px-6 py-4 whitespace-nowrap">
+                                            </td>
+                                            <td class="text-lg text-right text-sky-800 font-semibold px-6 py-4 whitespace-nowrap">
+                                                14,000.00 EUR
+                                            </td>
+                                        </tr>
+                                        <tr class="transition duration-300 ease-in-out hover:bg-slate-100">
+                                            <td class="whitespace-nowrap text-sky-800">
+                                                <i class="px-6 py-5 rounded-full bg-slate-100 fa-solid fa-arrow-up fa-base"></i>
+                                            </td>
+                                            <td class="text-lg text-left text-sky-800 font-semibold px-6 py-4 whitespace-nowrap">
+                                                Mark Jackson <br>
+                                                <span class="text-slate-500 text-xs font-sm">Sent ~ 29-01</span>
+                                            </td>
+                                            <td class="text-base text-gray-900 font-semibold px-6 py-4 whitespace-nowrap">
+                                            </td>
+                                            <td class="text-lg text-right text-sky-800 font-semibold px-6 py-4 whitespace-nowrap">
+                                                80,700.00 USD
+                                            </td>
+                                        </tr>
+                                        <tr class="transition duration-300 ease-in-out hover:bg-slate-100">
+                                            <td class="whitespace-nowrap text-sky-800">
+                                                <i class="px-6 py-5 rounded-full bg-slate-100 fa-solid fa-arrow-up fa-base"></i>
+                                            </td>
+                                            <td class="text-lg text-left text-sky-800 font-semibold px-6 py-4 whitespace-nowrap">
+                                                Daniel Thompson <br>
+                                                <span class="text-slate-500 text-xs font-sm">Sent ~ 25-01</span>
+                                            </td>
+                                            <td class="text-base text-gray-900 font-semibold px-6 py-4 whitespace-nowrap">
+                                            </td>
+                                            <td class="text-lg text-right text-sky-800 font-semibold px-6 py-4 whitespace-nowrap">
+                                                9,400.00 EUR
+                                            </td>
+                                        </tr>
+                                        <tr class="transition duration-300 ease-in-out hover:bg-slate-100">
+                                            <td class="whitespace-nowrap text-sky-800">
+                                                <i class="px-6 py-5 rounded-full bg-slate-100 fa-solid fa-arrow-up fa-base"></i>
+                                            </td>
+                                            <td class="text-lg text-left text-sky-800 font-semibold px-6 py-4 whitespace-nowrap">
+                                                Susan White <br>
+                                                <span class="text-slate-500 text-xs font-sm">Sent ~ 20-01</span>
+                                            </td>
+                                            <td class="text-base text-gray-900 font-semibold px-6 py-4 whitespace-nowrap">
+                                            </td>
+                                            <td class="text-lg text-right text-sky-800 font-semibold px-6 py-4 whitespace-nowrap">
+                                                40,000.00 USD
+                                            </td>
+                                        </tr>
+                                        <tr class="transition duration-300 ease-in-out hover:bg-slate-100">
+                                            <td class="whitespace-nowrap text-sky-800">
+                                                <i class="px-6 py-5 rounded-full bg-slate-100 fa-solid fa-arrow-up fa-base"></i>
+                                            </td>
+                                            <td class="text-lg text-left text-sky-800 font-semibold px-6 py-4 whitespace-nowrap">
+                                                Thomas Lee <br>
+                                                <span class="text-slate-500 text-xs font-sm">Sent ~ 22-01</span>
+                                            </td>
+                                            <td class="text-base text-gray-900 font-semibold px-6 py-4 whitespace-nowrap">
+                                            </td>
+                                            <td class="text-lg text-right text-sky-800 font-semibold px-6 py-4 whitespace-nowrap">
+                                                75,000.00 GBP
+                                            </td>
+                                        </tr>
+                                        <tr class="transition duration-300 ease-in-out hover:bg-slate-100">
+                                            <td class="whitespace-nowrap text-sky-800">
+                                                <i class="px-6 py-5 rounded-full bg-slate-100 fa-solid fa-arrow-up fa-base"></i>
+                                            </td>
+                                            <td class="text-lg text-left text-sky-800 font-semibold px-6 py-4 whitespace-nowrap">
+                                                Richard Wilson <br>
+                                                <span class="text-slate-500 text-xs font-sm">Sent ~ 18-01</span>
+                                            </td>
+                                            <td class="text-base text-gray-900 font-semibold px-6 py-4 whitespace-nowrap">
+                                            </td>
+                                            <td class="text-lg text-right text-sky-800 font-semibold px-6 py-4 whitespace-nowrap">
+                                                94,000.00 USD
+                                            </td>
+                                        </tr>
+                                        <tr class="transition duration-300 ease-in-out hover:bg-slate-100">
+                                            <td class="whitespace-nowrap text-sky-800">
+                                                <i class="px-6 py-5 rounded-full bg-slate-100 fa-solid fa-arrow-up fa-base"></i>
+                                            </td>
+                                            <td class="text-lg text-left text-sky-800 font-semibold px-6 py-4 whitespace-nowrap">
+                                                Robert Brown <br>
+                                                <span class="text-slate-500 text-xs font-sm">Sent ~ 16-01</span>
+                                            </td>
+                                            <td class="text-base text-gray-900 font-semibold px-6 py-4 whitespace-nowrap">
+                                            </td>
+                                            <td class="text-lg text-right text-sky-800 font-semibold px-6 py-4 whitespace-nowrap">
+                                                6,000.00 USD
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

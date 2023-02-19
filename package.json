@@ -1,0 +1,27 @@
+{
+  "name": "bank_project_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dannydiara/Bank_Project.git"
+  },
+  "author": "Danny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dannydiara/Bank_Project/issues"
+  },
+  "homepage": "https://github.com/Dannydiara/Bank_Project#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "request": "^2.88.2",
+    "tw-elements": "^1.0.0-alpha13"
+  }
+}
